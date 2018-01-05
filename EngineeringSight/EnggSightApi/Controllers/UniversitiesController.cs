@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataMgmt.Buisness.Model;
+using DataMgmt.Buisness.Services.Default;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,9 +11,14 @@ namespace EnggSightApi.Controllers
 {
     public class UniversitiesController : ApiController
     {
-        public IEnumerable<string> Get()
+        public IEnumerable<University> Get()
         {
-            return new List<string> { "VTU", "ANNA"};
+            IEnumerable<University> universities = null;
+            using (var context = new UniversityMgmtService())
+            {
+                universities = context.GetAll().ToList();
+            }
+            return universities;
         }
     }
 }

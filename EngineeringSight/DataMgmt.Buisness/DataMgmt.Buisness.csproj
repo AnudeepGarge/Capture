@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=2.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,12 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mappings\Mapper.cs" />
     <Compile Include="Model\University.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Default\UniversityMgmtService.cs" />
+    <Compile Include="Services\IUniversityMgmtService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mappings\" />
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\DataMgmt.DataAccess\DataMgmt.DataAccess.csproj">
+      <Project>{3221d87a-73aa-4242-87bd-497507095be4}</Project>
+      <Name>DataMgmt.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataMgmt.Data\DataMgmt.Data.csproj">
+      <Project>{0cd2e2b5-9516-4387-8496-9a0a8fc9cd85}</Project>
+      <Name>DataMgmt.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\AutoMapper.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

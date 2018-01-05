@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataMgmt.DataAccess.Repository
 {
-    interface IUniversityManagementRepository : IWriteRepository
+    public interface IUniversityManagementRepository : IWriteRepository
     {
         IEnumerable<University> GetAll();
     }

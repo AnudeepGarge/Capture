@@ -3,3 +3,10 @@
 ################################################################################
 
 /EngineeringSight/DataMgmt.Buisness/obj/Debug
+/EngineeringSight/DataMgmt.Common/obj/Debug
+/EngineeringSight/EngineeringSight/obj/Debug
+/EngineeringSight/EngineeringSight/bin
+/EngineeringSight/EnggSightApi/obj/Debug
+/EngineeringSight/EnggSightApi/bin
+/EngineeringSight/DataMgmt.DataAccess/obj/Debug
+/EngineeringSight/DataMgmt.Data/obj/Debug
