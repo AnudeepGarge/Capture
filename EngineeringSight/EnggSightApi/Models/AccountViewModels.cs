@@ -7,6 +7,8 @@ namespace EnggSightApi.Models
 
     public class ExternalLoginViewModel
     {
+
+
         public string Name { get; set; }
 
         public string Url { get; set; }
