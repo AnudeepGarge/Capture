@@ -106,8 +106,12 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Default\CourseMgmtRepository.cs" />
     <Compile Include="Repository\Default\UniversityManagementRepository.cs" />
     <Compile Include="Repository\Default\WriteRepository.cs" />
+    <Compile Include="Repository\IBaseMgmtRepositiry.cs" />
+    <Compile Include="Repository\IBranchMgmtRepository.cs" />
+    <Compile Include="Repository\ICourseMgmtRepository.cs" />
     <Compile Include="Repository\IUniversityManagementRepository.cs" />
     <Compile Include="Repository\IWriteRepository.cs" />
   </ItemGroup>
