@@ -10,3 +10,6 @@
 /EngineeringSight/EnggSightApi/bin
 /EngineeringSight/DataMgmt.DataAccess/obj/Debug
 /EngineeringSight/DataMgmt.Data/obj/Debug
+/EngineeringSight/DataMgmt.Buisness
+/EngineeringSight/DataMgmt.DataAccess/bin/Debug
+/EngineeringSight/.vs/EngineeringSight/v15/Server/sqlite3
