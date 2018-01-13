@@ -8,6 +8,8 @@ namespace DataMgmt.Buisness.Mappings
         {
             AutoMapper.Mapper.CreateMap(typeof(University),
                 typeof(DataMgmt.Buisness.Model.University));
+            AutoMapper.Mapper.CreateMap(typeof(Course),
+                typeof(DataMgmt.Buisness.Model.Course));
         }
     }
 }

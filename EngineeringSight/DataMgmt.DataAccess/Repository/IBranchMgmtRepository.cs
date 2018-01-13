@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataMgmt.DataAccess.Repository
 {
-    public interface IBranchMgmtRepository : IBaseMgmtRepositiry<Branch>
+    public interface IBranchMgmtRepository : IWriteRepository, IBaseMgmtRepositiry<Branch>
     {
     }
 }

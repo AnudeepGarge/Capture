@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataMgmt.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataMgmt.DataAccess.Repository
 {
-    class ICourseMgmtRepository
+    public interface ICourseMgmtRepository : IWriteRepository, IBaseMgmtRepositiry<Course>
     {
     }
 }

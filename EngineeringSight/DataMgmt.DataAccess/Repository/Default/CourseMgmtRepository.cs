@@ -11,7 +11,13 @@ namespace DataMgmt.DataAccess.Repository.Default
     {
         public IEnumerable<Course> GetItemsWithId(int id)
         {
-            throw new NotImplementedException();
+            IEnumerable<Course> courses = null;
+            courses = (from university in Context.University
+                      join unv_course in Context.University_Course on university.Id equals unv_course.UniversityId
+                      where university.Id == id
+                      select unv_course.Course).ToList();
+
+            return courses;
         }
     }
 }
